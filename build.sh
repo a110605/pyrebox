@@ -78,7 +78,8 @@ fi
 if ! [ -d "${qemu_path}" ]
 then
     echo -e "\n${GREEN}[*] Cloning qemu...${NC}\n"
-    git clone git://git.qemu.org/qemu.git
+    #git clone git://git.qemu.org/qemu.git
+    git clone https://github.com/qemu/qemu.git
     if ! [ -d "${qemu_path}" ]; then
         echo -e "\n${RED}[!] QEMU could not be cloned from git.qemu.org!${NC}\n"
         exit 1
